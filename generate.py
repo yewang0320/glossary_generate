@@ -2,7 +2,7 @@ import json
 import re
 #http://moorearchive.org/viewer/nb07_03_11
 
-f = open('glossary copy.json',)
+f = open('glossary.json',)
 
 data = json.load(f)
 output = ''
@@ -78,7 +78,7 @@ def genSrc(type, src):
 
 		#print(snippet)
 
-for x in range (0, 244):
+for x in range (0, len(data)):
 	if data[x]["displayOnlyAnnotatedNamesDisplayGlossaryLinksTheRestAreForFutureReference"] == "Yes":
 		birth = data[x]['birth']
 		death = data[x]['death']
