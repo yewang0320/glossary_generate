@@ -160,11 +160,20 @@ for x in range (0, len(data)):
 				death = death.split('T')[0]
 				death = datetime.strptime(death,'%Y-%m-%d').strftime("%B %-d, %Y")
 			#print(datetime.strptime(birth,'%m/%d/%Y').strftime("%B %d, %Y")) #display the date in correct format
-		p1 = "<p><strong class=\"person_name\">" + data[x]['lastOrFull'] + ', ' + data[x]['first'] + "</strong><span class=\"birth_death\" >" + ' (' + "</span>" + birth + ' - ' + death + ')' +"</p>"
+		db_exp = "" #death & birth expression
+		if death=="?" and birth=="?":
+			db_exp = " - "
+		elif death=="?":
+			db_exp = "b. " + birth
+		elif birth=="?":
+			db_exp = "d. " + death
+		else:
+			db_exp = birth + ' - ' + death
+		p1 = "<p><strong class=\"person_name\">" + data[x]['lastOrFull'] + ', ' + data[x]['first'] + "</strong><span class=\"birth_death\" >" + ' (' + "</span>" + db_exp + ')' +"</p>"
 		if len(firstName) == 1:
-			p1 = "<p><strong class=\"person_name\">" + data[x]['lastOrFull'] + "</strong><span>" + ' (' + "</span class=\"birth_death\" >" + birth + ' - ' + death + ')' +"</p>"
+			p1 = "<p><strong class=\"person_name\">" + data[x]['lastOrFull'] + "</strong><span>" + ' (' + "</span class=\"birth_death\" >" + db_exp + ')' +"</p>"
 		p2 = "<p class=\"generalDescription\">" + data[x]['generalDescription'] + "<br />"
-		#print (p2)
+		#print (p1)
 		p3 = ''
 		if 'descriptionOfRelationToMoore' in data[x]:
 			p3 = "<p class=\"relationToMoore\">" + data[x]['descriptionOfRelationToMoore'] + "</p>"
@@ -200,13 +209,15 @@ for x in range (0, len(data)):
 				htmltag = "<a href=\"" + nblink[0] +"\">"+"Notebook " +nb[1]+"</a>"
 				p3 = re.sub('Notebook ', htmltag, p3, 1)
 '''
-output = "<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\" />" + output
+output = "<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\" /><meta charset=\"utf-8\">" + output
 
-#print (output)
+print (output)
 
 HTML_file = open("glossary.html", "w")
 #HTML_file.write(output.encode('utf8')+'\n') #python 2 version
-HTML_file.write((str(output.encode('utf8'))+'\n')[2:])
+#HTML_file.write((str(output.encode('utf-8').decode('utf-8'))+'\n')[2:])
+#HTML_file.write((str(output.encode('utf-8'))+'\n'))
+HTML_file.write(output)
 HTML_file.close()
 
 f.close()
