@@ -630,6 +630,7 @@ l {
     margin-top:10px;
     border-style: solid;
     border-color: black;
+    background-color: pink;
 }
 l:after {
     content: attr(n);
