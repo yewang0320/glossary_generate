@@ -2,12 +2,12 @@ import json
 import re
 import time
 import datetime
-import virtualtime
+#import virtualtime
 from datetime import datetime, date, time
 #http://moorearchive.org/viewer/nb07_03_11
 
 f = open('glossary.json',)
-virtualtime.enable()
+#virtualtime.enable()
 data = json.load(f)
 output = ''
 
@@ -211,7 +211,7 @@ for x in range (0, len(data)):
 '''
 output = "<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\" /><meta charset=\"utf-8\">" + output
 
-print (output)
+#print (output)
 
 HTML_file = open("glossary.html", "w")
 #HTML_file.write(output.encode('utf8')+'\n') #python 2 version
