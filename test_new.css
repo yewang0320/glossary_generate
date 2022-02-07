@@ -753,8 +753,8 @@ div note persName, div note orgName, div note title, div note placeName {
 }
 
 div[type="page"] {
-  border-style:dotted;
-  border-color:black;
+  border-style: solid;
+  border-color:(222, 222, 222);
 }
 
 note[place = "left"] {
