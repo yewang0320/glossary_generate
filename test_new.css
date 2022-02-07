@@ -628,9 +628,6 @@ l {
     display : block;
     white-space : nowrap;
     margin-top:10px;
-    border-style: solid;
-    border-color: black;
-    background-color: pink;
 }
 l:after {
     content: attr(n);
@@ -754,6 +751,12 @@ note[n]:before {
 div note persName, div note orgName, div note title, div note placeName {
     color:#6DB0CC !important;
 }
+
+div[type="page"] {
+  border-style:dotted;
+  border-color:black;
+}
+
 note[place = "left"] {
     float : left;
 }
