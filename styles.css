@@ -1,0 +1,29 @@
+* {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12pt;
+}
+
+[class^='relevance_'] {
+  text-indent: 1em;
+}
+
+.person_name {
+
+}
+
+.generalDescription {
+  text-indent: 1em;
+}
+
+.relationToMoore {
+  text-indent: 1em;
+}
+
+a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
