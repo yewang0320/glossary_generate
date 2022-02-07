@@ -628,6 +628,7 @@ l {
     display : block;
     white-space : nowrap;
     margin-top:10px;
+    background-color: rgba(100, 150, 100, 0.5);
 }
 l:after {
     content: attr(n);
