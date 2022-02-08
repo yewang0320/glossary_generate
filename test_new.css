@@ -724,6 +724,7 @@ name {
 note {
     display : block;
     color:#999;
+    vertical-align: super;
 }
 note:before {
     content:'note: ';
