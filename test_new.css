@@ -725,17 +725,23 @@ name {
 
 note {
     /*display : block;*/
-    display: none;
+    display: inline-block;
     background-color:yellow;
     color:#999;
     vertical-align: super;
     font-size: smaller;
+    text-indent: -9999px;
     /*max-width: 400px;*/
+    width: 30px;
 }
 note:before {
     content:'note: ';
     font-variant:small-caps;
-    display: inline-block;
+}
+
+note:hover {
+  text-indent: 0px;
+  max-width: 1000px;
 }
 
 note:hover:before {
