@@ -726,13 +726,14 @@ name {
 note {
     /*display : block;*/
     display: inline-block;
-    background-color:yellow;
+    background-color:red;
     color:#999;
     vertical-align: super;
     font-size: smaller;
     text-indent: -9999px;
     /*max-width: 400px;*/
-    width: 30px;
+    width: 15px;
+    height: 15px;
 }
 note:before {
     content:'note: ';
