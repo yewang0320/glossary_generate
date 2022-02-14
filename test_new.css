@@ -722,7 +722,8 @@ name {
     display : inline;
 }
 note {
-    display : block;
+    /*display : block;*/
+    display: inline;
     color:#999;
 }
 note:before {
