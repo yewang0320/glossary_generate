@@ -745,6 +745,7 @@ note:before {
 note:hover {
   text-indent: 0px;
   max-width: 1000px;
+  background-color: transparent;
 }
 
 note:hover:before {
