@@ -724,7 +724,7 @@ name {
 }
 note {
     /*display : block;*/
-    display: inline;
+    display: inline-block;
     color:#999;
     vertical-align: super;
     font-size: smaller;
