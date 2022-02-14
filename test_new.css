@@ -730,11 +730,15 @@ note {
     color:#999;
     vertical-align: super;
     font-size: smaller;
-    //max-width: 400px;
+    /*max-width: 400px;*/
 }
 note:before {
     content:'note: ';
     font-variant:small-caps;
+}
+
+note:hover:before {
+    display: inline-block;
 }
 note[type]:before {
     content : attr(type) ': ';
