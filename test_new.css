@@ -726,6 +726,8 @@ name {
 note {
     /*display : block;*/
     display: inline-block;
+    position: relative;
+    top: -20px;
     background-color:red;
     color:#999;
     vertical-align: super;
@@ -734,7 +736,6 @@ note {
     /*max-width: 400px;*/
     width: 15px;
     height: 15px;
-    line-height:0%;
 }
 note:before {
     content:'note: ';
