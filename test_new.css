@@ -728,7 +728,7 @@ note {
     color:#999;
     vertical-align: super;
     font-size: smaller;
-    max-width: 500px;
+    max-width: 400px;
 }
 note:before {
     content:'note: ';
