@@ -725,6 +725,8 @@ note {
     /*display : block;*/
     display: inline;
     color:#999;
+    vertical-align: super;
+    font-size: smaller;
 }
 note:before {
     content:'note: ';
