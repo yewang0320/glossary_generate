@@ -735,6 +735,7 @@ note {
 note:before {
     content:'note: ';
     font-variant:small-caps;
+    display: inline-block;
 }
 
 note:hover:before {
