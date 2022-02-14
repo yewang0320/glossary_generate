@@ -722,13 +722,15 @@ milestone {
 name {
     display : inline;
 }
+
 note {
     /*display : block;*/
-    display: inline-block;
+    display: none;
+    background-color:yellow;
     color:#999;
     vertical-align: super;
     font-size: smaller;
-    max-width: 400px;
+    //max-width: 400px;
 }
 note:before {
     content:'note: ';
