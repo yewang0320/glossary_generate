@@ -724,8 +724,6 @@ name {
 note {
     display : block;
     color:#999;
-    vertical-align: super;
-    font-size: 6pt;
 }
 note:before {
     content:'note: ';
