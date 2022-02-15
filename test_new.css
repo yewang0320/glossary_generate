@@ -728,14 +728,14 @@ note {
     display: inline-block;
     position: relative;
     top: -7px;
-    background-color:red;
+    background-color:#fcc2e3;
     color:#999;
     vertical-align: super;
     font-size: smaller;
     text-indent: -9999px;
     /*max-width: 400px;*/
-    width: 15px;
-    height: 15px;
+    width: 7px;
+    height: 7px;
 }
 note:before {
     content:'note: ';
