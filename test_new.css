@@ -727,7 +727,7 @@ note {
     /*display : block;*/
     display: inline-block;
     position: relative;
-    top: -1px;
+    top: 1px;
     background-color:#fcc2e3;
     color:#999;
     vertical-align: super;
