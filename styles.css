@@ -19,11 +19,11 @@
   text-indent: 1em;
 }
 
-a {
+a.glossary_reference {
   text-decoration: underline;
   color: inherit;
 }
 
-a:hover {
+a.glossary_reference:hover {
   text-decoration: underline;
 }
