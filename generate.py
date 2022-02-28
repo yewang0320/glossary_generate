@@ -96,17 +96,17 @@ def genSrc(type, id):
 					nblink[idx] = nblink[idx]+ext
 
 					if idx==len(pages)-1:
-						snippet = snippet + "Notebook " + src[0]+"."+src[1]+"."+src[2]+" page " +"<a href=\"" + nblink[idx] + "\">"+ext+"</a>"
+						snippet = snippet + "Notebook " + src[0]+"."+src[1]+"."+src[2]+" page " +"<a class=\"glossary_reference\" href=\"" + nblink[idx] + "\">"+ext+"</a>"
 					else:
-						snippet = snippet + "<a href=\"" + nblink[idx] + "\">"+ext+"</a>"
+						snippet = snippet + "<a class=\"glossary_reference\" href=\"" + nblink[idx] + "\">"+ext+"</a>"
 					if idx != 0:
 						snippet = snippet + ", "
 
 			'''for i in range (0, len(nblink)):
 				if i==0:
-					snippet = snippet + "Notebook " + src[0]+"."+src[1]+"."+src[2]+" page " +"<a href=\"" + nblink[i] + "\">"+ext+"</a>"
+					snippet = snippet + "Notebook " + src[0]+"."+src[1]+"."+src[2]+" page " +"<a class=\"glossary_reference\" href=\"" + nblink[i] + "\">"+ext+"</a>"
 				else:
-					snippet = snippet + "<a href=\"" + nblink[i] + "\">"+ext+"</a>"
+					snippet = snippet + "<a class=\"glossary_reference\" href=\"" + nblink[i] + "\">"+ext+"</a>"
 				if i != len(nblink)-1:
 					snippet = snippet + ", "'''
 			if x != len(p_list)-1:
